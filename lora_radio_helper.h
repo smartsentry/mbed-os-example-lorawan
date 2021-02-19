@@ -64,6 +64,7 @@ SX1276_LoRaRadio radio(MBED_CONF_SX1276_LORA_DRIVER_SPI_MOSI,
 
 #elif COMPONENT_SX126X
 #include "SX126X_LoRaRadio.h"
+/*
 SX126X_LoRaRadio radio(MBED_CONF_SX126X_LORA_DRIVER_SPI_MOSI,
                        MBED_CONF_SX126X_LORA_DRIVER_SPI_MISO,
                        MBED_CONF_SX126X_LORA_DRIVER_SPI_SCLK,
@@ -71,10 +72,11 @@ SX126X_LoRaRadio radio(MBED_CONF_SX126X_LORA_DRIVER_SPI_MOSI,
                        MBED_CONF_SX126X_LORA_DRIVER_RESET,
                        MBED_CONF_SX126X_LORA_DRIVER_DIO1,
                        MBED_CONF_SX126X_LORA_DRIVER_BUSY,
-                       MBED_CONF_SX126X_LORA_DRIVER_FREQ_SEL,
-                       MBED_CONF_SX126X_LORA_DRIVER_DEV_SEL,
-                       MBED_CONF_SX126X_LORA_DRIVER_XTAL_SEL,
+                       MBED_CONF_SX126X_LORA_DRIVER_FREQ_SELECT,
+                       MBED_CONF_SX126X_LORA_DRIVER_DEVICE_SELECT,
+                       MBED_CONF_SX126X_LORA_DRIVER_CRYSTAL_SELECT,
                        MBED_CONF_SX126X_LORA_DRIVER_ANT_SWITCH);
+					   */
 
 #else
 #error "Unknown LoRa radio specified (SX126X, SX1272, SX1276 are valid)"

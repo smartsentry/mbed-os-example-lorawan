@@ -27,6 +27,18 @@
 
 using namespace events;
 
+SX126X_LoRaRadio radio(MBED_CONF_SX126X_LORA_DRIVER_SPI_MOSI,
+                       MBED_CONF_SX126X_LORA_DRIVER_SPI_MISO,
+                       MBED_CONF_SX126X_LORA_DRIVER_SPI_SCLK,
+                       MBED_CONF_SX126X_LORA_DRIVER_SPI_CS,
+                       MBED_CONF_SX126X_LORA_DRIVER_RESET,
+                       MBED_CONF_SX126X_LORA_DRIVER_DIO1,
+                       MBED_CONF_SX126X_LORA_DRIVER_BUSY,
+                       MATCHING_FREQ_868,
+                       SX1262,
+                       MBED_CONF_SX126X_LORA_DRIVER_CRYSTAL_SELECT,
+                       MBED_CONF_SX126X_LORA_DRIVER_ANT_SWITCH);
+
 // Max payload size can be LORAMAC_PHY_MAXPAYLOAD.
 // This example only communicates with much shorter messages (<30 bytes).
 // If longer messages are used, these buffers must be changed accordingly.

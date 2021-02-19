@@ -174,8 +174,23 @@
             "sx1276-lora-driver.dio1":           "PIN_NAME_LORA_DIO1",
             "sx1276-lora-driver.dio2":           "PIN_NAME_LORA_DIO2",
             "sx1276-lora-driver.dio3":           "PIN_NAME_LORA_DIO3"
+        },
+
+        "POD_L151CC": {
+            "target.components_add":             ["SX126X"],
+            "SX126X-lora-driver.spi-mosi":       "PB_5",
+            "SX126X-lora-driver.spi-miso":       "PB_4",
+            "SX126X-lora-driver.spi-sclk":       "PB_3",
+            "SX126X-lora-driver.spi-cs":             "PA_15",
+            "SX126X-lora-driver.reset":          "PA_12",
+            "SX126X-lora-driver.dio1":           "PB_7",
+            "SX126X-lora-driver.busy":           "PB_6",
+            "SX126X-lora-driver.freq-select":    "NC",
+            "SX126X-lora-driver.device-select":  "NC",
+            "SX126X-lora-driver.crystal-select": "NC",
+            "SX126X-lora-driver.ant-switch":     "NC"
+
         }
     },
     "macros": ["MBEDTLS_USER_CONFIG_FILE=\"mbedtls_lora_config.h\""]
 }
-
